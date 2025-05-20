@@ -4,7 +4,7 @@ import Main from "./pages/Main";
 
 const mainRoutes = [
   {
-    path: "/Portofolio-website/",
+    path: "/Portofolio-Website/",
     element: <Main />
   }
 ];
