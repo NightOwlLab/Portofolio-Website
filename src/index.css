@@ -1,68 +1,125 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Default, desktop, laptop, tab */
+.navbar-transparent {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.navbar-solid {
+    background-color: var(--bs-body-bg) !important;
+    transition: background-color 0.3s ease;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.navbar-transparent .navbar-brand, .navbar-transparent .nav-link, .navbar-transparent .nav-item .active, .navbar-transparent .toogle-mode {
+    color: white;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.toggler-white .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+html {
+  scroll-padding-top: 80px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+section {
+    width: 100%;
+    min-height: 30vh;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid;
+}
+
+#main-profile {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 25%;
+}
+
+.text-shadow {
+    color: white;
+    text-shadow: 0px 0px 15px black;
+}
+
+.text-shadow-inherit {
+    text-shadow: 0px 0px 15px black;
+}
+
+.hoverable:hover {
+    text-shadow: 0px 0px 50px white;
+}
+
+[data-bs-theme="dark"] .skill-card {
+  border: 2px solid white;
+}
+
+[data-bs-theme="light"] .skill-card {
+  border: 2px solid black;
+}
+
+[data-bs-theme="light"] .btn-custom {
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+[data-bs-theme="light"] .btn-custom:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+[data-bs-theme="dark"] .btn-custom {
+    color: black;
+    background-color: white;
+}
+
+[data-bs-theme="dark"] .btn-custom:hover {
+    color: white;
+    background-color: rgba(34, 34, 34, 0);
+    border: 1px solid white;
+}
+
+[data-bs-theme="dark"] .tech-badge {
+    background-color: white;
+    color: black;
+}
+
+[data-bs-theme="light"] .tech-badge {
+    background-color: black;
+    color: white;
+}
+
+.sosial-media-icon:hover {
+    transform: translateY(-5px);
+}
+
+.sosial-media-icon#linkedin:hover i {
+    color: rgb(45, 129, 255);
+}
+
+.sosial-media-icon#instagram:hover i {
+    background: linear-gradient(red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sosial-media-icon#email:hover i {
+    color: red;
+}
+
+.sosial-media-icon#github1:hover i, .sosial-media-icon#github2:hover i {
+    color: black;
+    text-shadow: 0px 0px 2px white;
+}
+
+/* Phone */
+@media screen and (max-width: 768px) {
+    #main-profile {
+        position: absolute;
+        top: 10%;
+    }
 }
