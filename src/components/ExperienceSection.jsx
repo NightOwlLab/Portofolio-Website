@@ -49,7 +49,7 @@ const ExperienceSection = () => {
                     experience_data?.map((data, i) =>
                         <div key={i} className="col my-3 mb-lg-0 gap-2" data-aos="fade-zoom-in">
                             <div className="card shadow-lg h-100">
-                                <img loading="lazy" src={data?.image} className="card-img-top border-bottom object-fit-cover" alt="experience-picture" style={{ backgroundColor:'#545934', height:'15rem'}}/>
+                                <img loading="lazy" src={data?.image} className="card-img-top border-bottom object-fit-cover" alt="experience-picture" style={{ backgroundColor:'white', height:'15rem'}}/>
                                 <div className="card-body d-flex flex-column justify-content-between">
                                     <div className='mb-3'>
                                         <h5 className="card-title fw-semibold">{data?.title}</h5>

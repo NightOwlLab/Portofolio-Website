@@ -24,13 +24,13 @@ const MainSection = () => {
         <div id="carouselExampleInterval" className="carousel slide carousel-fade h-100 z-1" data-bs-ride="carousel">
           <div className="carousel-inner h-100">
             <div className="carousel-item h-100 active" data-bs-interval="3000">
-              <video src={Carousel1} muted autoPlay loop playsInline className="d-block w-100 object-fit-cover h-100"/>
+              <video src={Carousel1} muted autoPlay loop playsInline className="d-block w-100 object-fit-cover h-100" preload="auto"/>
             </div>
             <div className="carousel-item h-100" data-bs-interval="3000">
-              <video src={Carousel2} muted autoPlay loop playsInline className="d-block w-100 object-fit-cover h-100"/>
+              <video src={Carousel2} muted autoPlay loop playsInline className="d-block w-100 object-fit-cover h-100" preload="auto"/>
             </div>
             <div className="carousel-item h-100" data-bs-interval="3000">
-              <video src={Carousel3} muted autoPlay loop playsInline className="d-block w-100 object-fit-cover h-100"/>
+              <video src={Carousel3} muted autoPlay loop playsInline className="d-block w-100 object-fit-cover h-100" preload="auto"/>
             </div>
           </div>
         </div>
