@@ -4,6 +4,7 @@ import Java from '/tech/java.png';
 import Kotlin from '/tech/kotlin.png';
 import Python from '/tech/python.png';
 import Dart from '/tech/dart.png';
+import Go from '/tech/golang.png';
 
 import MySQL from '/tech/mysql.png';
 import MariaDB from '/tech/mariadb.png';
@@ -16,12 +17,17 @@ import js from '/tech/javascript.png';
 import php from '/tech/php.png';
 import Laravel from '/tech/laravel.png';
 import ExpressJS from '/tech/expressjs.png';
+import SpringBoot from '/tech/spring boot.png';
 import NodeJS from '/tech/node.png';
 
 import ReactJS from '/tech/reactjs.png';
 import bootstrap from '/tech/bootstrap.png';
 import tailwind from '/tech/tailwind.png';
 import reactBootstrap from '/tech/react-bootstrap.png';
+import Angular from '/tech/angular.png';
+import NextJS from '/tech/nextjs.png';
+import Net from '/tech/net.png';
+import Typescript from '/tech/typescript.png';
 
 import Flutter from '/tech/flutter.png';
 
@@ -83,6 +89,10 @@ const SkillSection = () => {
         {
             name: "Dart",
             image: Dart
+        },
+        {
+            name: "Go",
+            image: Go
         }
     ];
     const website_development = [
@@ -130,6 +140,10 @@ const SkillSection = () => {
             name: "ExpressJS",
             image: ExpressJS,
             whiteBg: true
+        },
+        {
+            name: "Spring Boot",
+            image: SpringBoot,
         }
     ];
     const frontend_website_development = [
@@ -275,14 +289,26 @@ const SkillSection = () => {
             image: Csharp
         },
         {
-            name: "Unity",
-            image: Unity,
+            name: "Angular",
+            image: Angular
+        },
+        {
+            name: "NextJS",
+            image: NextJS,
             whiteBg: true
         },
         {
-            name: "Azure",
-            image: Azure
-        }
+            name: ".NET",
+            image: Net
+        },
+        {
+            name: "Typescript",
+            image: Typescript
+        },
+        {
+            name: "React Native",
+            image: ReactJS
+        },
     ];
     
     const skills = [
@@ -323,7 +349,7 @@ const SkillSection = () => {
             datas: linux_distro
         },
         {
-            title: "In Progress",
+            title: "On Progress",
             datas: other_skill
         },
     ];

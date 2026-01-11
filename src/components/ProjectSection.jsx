@@ -2,6 +2,8 @@ import FlappyBird from '/project/flappybird.png';
 import AtmaLaundry from '/project/atma-laundry.png';
 import AtmaCinema from '/project/atma-cinema.jpeg';
 import Loopwear from '/project/loopwear.png';
+import Gatak from '/project/gatakii.png';
+import ReuseMart from '/project/reusemart.png';
 
 const ProjectSection = () => {
     const projects = [
@@ -26,11 +28,11 @@ const ProjectSection = () => {
             image: AtmaCinema,
             links: [
                 {
-                    name: "Source Code Frontend",
+                    name: "Source Code (Frontend)",
                     link: "https://github.com/Dayaszs/1_D_Bioskop.git"
                 },
                 {
-                    name: "Source Code Backend",
+                    name: "Source Code (Backend)",
                     link: "https://github.com/Vingorithm/1_D_Bioskop_Backend.git"
                 }
             ]
@@ -60,13 +62,55 @@ const ProjectSection = () => {
                     link: "https://github.com/Vingorithm/wdc-loopwear-2025.git"
                 }
             ]
-        }
+        },
+        {
+            name: "Reuse Mart",
+            date: "July 2025 – August 2025",
+            description: "This project is a static website created for my KKN project using React JS and Bootstrap. The website is hosted using Vercel and registered with Google Search Console.",
+            tech: ["ReactJS", "ExpressJS", "Flutter"],
+            image: ReuseMart,
+            links: [
+                {
+                    name: "Source Code (Backend)",
+                    link: "https://github.com/Vingorithm/backend-p3l-reusemart.git"
+                },
+                {
+                    name: "Source Code (Frontend)",
+                    link: "https://github.com/Vingorithm/frontendweb-p3l-reusemart.git"
+                },
+                {
+                    name: "Source Code (Mobile)",
+                    link: "https://github.com/Vingorithm/frontendmobile_p3l_reusemart.git"
+                },
+                {
+                    name: "Source Code (Database)",
+                    link: "https://github.com/Vingorithm/database_p3l_reusemart.git"
+                },
+            ]
+        },
+        {
+            name: "Gatak II Village Profile Website",
+            date: "July 2025 – August 2025",
+            description: "This project is a static website created for my KKN project using React JS and Bootstrap. The website is hosted using Vercel and registered with Google Search Console.",
+            tech: ["ReactJS"],
+            image: Gatak,
+            links: [
+                {
+                    name: "Source Code",
+                    link: "https://github.com/WebsiteGatakII/Website-Profil-Desa-Gatak-II.git"
+                },
+                {
+                    name: "Preview",
+                    link: "https://website-profil-desa-gatak-ii.vercel.app/"
+                }
+            ]
+        },
     ];
 
     return <>
         <section id='project-section' className="mt-5 px-md-5 px-3" >
             <h1 className="fw-bold mb-5" data-aos="fade-zoom-in">Project</h1>
-                <div className="row row-cols-xl-4 row-cols-md-2 row-cols-1">
+                <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center">
                     {
                         projects?.map((data, i) => 
                             <div className="col my-3 mb-lg-0" key={i} data-aos="fade-zoom-in">

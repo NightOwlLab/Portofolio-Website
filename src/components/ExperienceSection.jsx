@@ -5,10 +5,17 @@ import HimaforkaMoment from '/experience/himaforka-moment.jpg';
 import BasicMath from '/experience/basicmath.jpg';
 import LinearAlgebra from '/experience/linearalgebra.jpg';
 import Network from '/experience/network.jpg';
+import Bca from '/experience/bca.jpg';
 
 const ExperienceSection = () => {
 
     const experience_data = [
+        {
+            title: "Intern at BCA",
+            description: "August 2025 – February 2026",
+            image: Bca,
+            link: "https://www.linkedin.com/in/ivan-tjandra-01b209288/"
+        },
         {
             title: "Chairman - KSL UAJY",
             description: "September 2023 – June 2024",
@@ -44,7 +51,7 @@ const ExperienceSection = () => {
     return <>
         <section id='experience-section' className='mt-5 px-md-5 px-3' >
             <h1 className='fw-bold mb-5' data-aos="fade-zoom-in">Experience</h1>
-            <div className="row row-cols-xl-5 row-cols-md-2 row-cols-1 justify-content-center">
+            <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center">
                 {
                     experience_data?.map((data, i) =>
                         <div key={i} className="col my-3 mb-lg-0 gap-2" data-aos="fade-zoom-in">
